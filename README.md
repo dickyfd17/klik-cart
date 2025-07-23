@@ -6,9 +6,9 @@ cuman buat latihan next js, zustand, dan jest
 
 ## 🛠️ Built With
 List the main technologies, frameworks, libraries, or tools used in the project:
-- [Technology 1](https://nextjs.org/)
-- [Technology 2](https://zustand-demo.pmnd.rs/)
-- [Technology 3](https://jestjs.io/)
+- [Next JS](https://nextjs.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Jest](https://jestjs.io/)
 
 ## 📸 Screenshot
 If you have a screenshot or diagram, add it here for visual reference:
