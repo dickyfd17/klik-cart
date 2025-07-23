@@ -1,16 +1,34 @@
 import { create } from 'zustand';
 
-interface CounterState {
-  count: number;
-  increase: () => void;
-  reset: () => void;
+interface QuantitiesState {
+  quantities: Record<number, number>;
+  increaseQuantity: (id: number) => void;
+  decreaseQuantity: (id: number) => void;
 }
 
-const useStore = create<CounterState>((set) => ({
-  count: 0,
-  increase: () => set((state) => ({ count: state.count + 1 })),
-  decrease: () => set((state) => ({ count: state.count - 1 })),
-  reset: () => set({ count: 0 }),
+const useStore = create<QuantitiesState>((set) => ({
+  quantities: {},
+  increaseQuantity: (id) =>
+    set((state) => {
+      const currentQty = state.quantities[id] || 0;
+      return {
+        quantities: {
+          ...state.quantities,
+          [id]: currentQty + 1,
+        },
+      };
+    }),
+  decreaseQuantity: (id) =>
+    set((state) => {
+      const currentQty = state.quantities[id] || 0;
+      if (currentQty === 0) return {};
+      return {
+        quantities: {
+          ...state.quantities,
+          [id]: currentQty - 1,
+        },
+      };
+    }),
 }));
 
 export default useStore;
