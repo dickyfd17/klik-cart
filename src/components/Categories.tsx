@@ -12,9 +12,9 @@ export default function Categories() {
     return (
         <section className="px-6 my-6">
             <h3 className="mb-4 font-semibold">
-                Shop From <span className="text-blue-600">Top Categories</span>
+                Shop From <span className="text-blue-900">Top Categories</span>
             </h3>
-            <div className="flex space-x-6 overflow-x-auto">
+            <div className="flex space-x-6 overflow-x-auto p-4">
                 {categories.map(({ id, name, image }) => (
                     <div
                         key={id}

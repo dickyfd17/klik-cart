@@ -29,7 +29,7 @@ export default function Brands() {
     return (
         <section className="px-6 my-6">
             <h3 className="mb-4 font-semibold">
-                Top <span className="text-blue-600">Electronics Brands</span>
+                Top <span className="text-blue-900">Electronics Brands</span>
             </h3>
             <div className="flex space-x-4 overflow-x-auto">
                 {brands.map(({ id, name, discountText, bgColor, logo, productImage }) => (

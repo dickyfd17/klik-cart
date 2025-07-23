@@ -51,9 +51,9 @@ export default function DailyEssentials() {
         <section className="px-6 py-8">
             <div className="flex justify-between items-center mb-4">
                 <h3 className="font-semibold text-lg">
-                    Daily <span className="text-blue-600">Essentials</span>
+                    Daily <span className="text-blue-900">Essentials</span>
                 </h3>
-                <button className="text-blue-600 hover:underline text-sm">View All &gt;</button>
+                <button className="text-blue-900 hover:underline text-sm">View All &gt;</button>
             </div>
             <div className="flex space-x-6 overflow-x-auto scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-gray-100 p-4">
                 {essentials.map(({ id, name, discount, imageUrl }) => (

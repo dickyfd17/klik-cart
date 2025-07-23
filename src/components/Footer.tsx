@@ -76,6 +76,7 @@ export default function Footer() {
                                     src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                                     alt="App Store"
                                     className="h-12"
+                                    width={100}
                                 />
                             </a>
                             <a
@@ -123,7 +124,7 @@ export default function Footer() {
             </div>
 
             <div className="mt-10 text-center text-sm">
-                © 2022 All rights reserved. Reliance Retail Ltd.
+                © 2025 All rights reserved. Dicky Fajar Darmawan.
             </div>
         </footer>
     );
